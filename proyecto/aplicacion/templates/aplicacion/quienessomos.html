@@ -1,0 +1,42 @@
+{% extends 'aplicacion/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<section class="container">
+    <div class="row">
+      <div class="col-md-12 col-md-offset-0 text-left">
+        <h2>Quienes Somos</h2>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <section class="container" aling="left">
+    <div class="row">
+      <div class="col-md-12 col-md-offset-0 text-left">
+        <p>Somos vecinos de una comunidad que comenzaron a realizar una venta de productos para jardinería como
+          maceteros, tierra de hojas, flores y arbustos, todo esto para ayudar a una fundación sin fines de lucro, todo
+          partió a través de las redes sociales, pero en la actualidad es casi imposible dar abasto a la demanda a
+          través de las redes sociales.</p><br>
+        <p>
+          Por eso, a contactado a los alumnos del Duoc para que puedan ayudarles a construir una aplicación web que
+          permita a sus usuarios elaborar listas de compras con la intención de permitir a los vecinos a ordenar sus
+          presupuestos, mejorar sus finanzas, realizar el aporte a la fundación sin fines de lucro y mejorar la venta y
+          el despacho de sus productos.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="col-md-12 col-md-offset-0 text left">
+      
+      <div class= "thumbnail">
+        <img src="{% static 'aplicacion/assets/Grupo.jpg' %}" alt="Abono">
+      </div>                 
+
+    </div>
+
+  </section>
+
+{% endblock %}
