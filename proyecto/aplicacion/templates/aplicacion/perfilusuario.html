@@ -1,0 +1,66 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+
+<link rel="stylesheet" href="{% static 'aplicacion/css/perfil.css'%}">  
+
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <div class="perfil-usuario-avatar">
+                    <img src="assets/macetero.jpg" alt="img-avatar">
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo">Usuario numero1</h3>
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="perfil-usuario-footer">
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-signs"></i> Direccion de usuario:</li>
+                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
+                </ul>
+                <ul class="lista-datos">
+                    
+                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
+                    <li><i class="icono fas fa-user-check"></i> Fecha Registro.</li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <h3>Perfil de Usuario</h3>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form|crispy}}
+
+                <div>
+                    <input type="submit" value="Guardar Perfil" class="btn btn-info btn-lg float-end">
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+</div>
+
+
+
+{% endblock contenido %}
