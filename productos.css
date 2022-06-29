@@ -1,0 +1,16 @@
+.card-prod{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 200px;
+   border: solid 1px rgb(248, 222, 222);
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: flex-start;
+ }
+
+.container-img{
+   height: 50em;
+   width: 18em;
+}
